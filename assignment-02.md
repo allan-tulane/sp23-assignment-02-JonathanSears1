@@ -1,6 +1,6 @@
 # CMPS 2200 Assignment 2
 
-**Name:**_________________________
+**Name:** Jonathan Sears
 
 In this assignment we'll work on applying the methods we've learned to analyze recurrences, and also see their behavior
 in practice. As with previous
@@ -9,58 +9,59 @@ should feel free to edit this file with your answers; for handwritten
 work please scan your work and submit a PDF titled `assignment-02.pdf`
 and push to your github repository.
 
+**The work for all of the recurrences in problems 1 and 2 can be found in a seperate pdf: work.pdf**
 
 1. Derive asymptotic upper bounds of work for each recurrence below.
   * $W(n)=2W(n/3)+1$
 .  
-.  
+.  in O(n)
 .  
 .  
 .  
   * $W(n)=5W(n/4)+n$
 .  
-.  
+.  in O(n^2)
 .  
 .  
 .  
   * $W(n)=7W(n/7)+n$
 .  
-.  
+.  in O(nlogn)
 .  
 .  
 .  
   * $W(n)=9W(n/3)+n^2$
 .  
-.  
+.  in O(n^3)
 .  
 .  
 .  
   * $W(n)=8W(n/2)+n^3$
 .  
 .  
-.  
+.  in O(n^4)
 .  
 .  
   * $W(n)=49W(n/25)+n^{3/2}\log n$
 .  
 .  
-.  
+.  in O((n^2)logn)
 .  
 .  
   * $W(n)=W(n-1)+2$
 .  
-.  
+.  in O(n)
 .  
 .  
 .  
   * $W(n)= W(n-1)+n^c$, with $c\geq 1$
 .  
-.  
+.  in O(n^(1+c))
 .  
 .  
 .  
   * $W(n)=W(\sqrt{n})+1$
-
+	 in O(log(logn))
 
 2. Suppose that for a given task you are choosing between the following three algorithms:
 
@@ -80,6 +81,13 @@ and push to your github repository.
     What are the asymptotic running times of each of these algorithms?
     Which algorithm would you choose?
 
+		algorithm A: W(n) in O(n^3)
+
+		algorithm B: W(n) in O(2^n)
+
+		algorithm C: W(n) in O(n^3)
+
+		I would pick algorithm A because even though it has the same upper bound for work as algorithm C, since A takes linear time to combine solutions vs C which takes n^2 time algorithm A would have a smaller span and a faster runtime. 
 
 3. Now that you have some practice solving recurrences, let's work on
   implementing some algorithms. In lecture we discussed a divide and
